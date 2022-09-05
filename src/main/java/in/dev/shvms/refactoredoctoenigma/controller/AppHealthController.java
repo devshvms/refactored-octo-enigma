@@ -32,6 +32,15 @@ public class AppHealthController {
             if (Objects.isNull(httpStatus)) {
                 throw new RefactoredoctoenigmaException(new ErrorResponse(HttpStatus.BAD_REQUEST, "Invalid HTTP-CODE. "+ errorResponseCode + " Does not exist"));
             }
+
+            /*
+            * ResponseStatusException used to set actual response http status as httpStatus
+            * If handling RefactoredoctoenigmaException we can only specify 1 response status
+            * using @ResponseStatus(XYZ) on the Exception Handler method.
+            * We should try to extend RefactoredoctoenigmaException class with ResponseStatusException,
+            * then we might get same result with our custom class also.
+            *
+            * */
             throw new ResponseStatusException(httpStatus, "Successfully parsed HTTP-CODE and thrown wrapped custom Exception.");
         } catch(NumberFormatException nex)  {
             throw new RefactoredoctoenigmaException(new ErrorResponse(HttpStatus.BAD_REQUEST, "Expecting HTTP-CODE not " +errorResponseCode));
