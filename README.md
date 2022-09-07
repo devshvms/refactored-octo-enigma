@@ -13,7 +13,6 @@ java v17
 4. if you getting some error check java version, default port 8081 if its not free.
 
 **What all packages covered?**
-
-[1]: spring-boot-web
-[2]: spring-boot-test
-[3]: spring-boot-actuator
+1. spring-boot-web
+2. spring-boot-test
+3. spring-boot-actuator
