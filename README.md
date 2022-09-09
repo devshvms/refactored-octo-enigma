@@ -14,5 +14,6 @@ java v17
 
 **What all packages covered?**
 1. spring-boot-web
-2. spring-boot-test
+2. spring-boot-starter and test
 3. spring-boot-actuator
+4. spring-boot-security and test
