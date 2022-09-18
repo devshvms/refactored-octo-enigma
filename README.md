@@ -18,4 +18,4 @@ java v17
 3. spring-boot-actuator
 4. spring-boot-security and test with filters
   
-5. (spring security security)https://www.youtube.com/watch?v=EeXFwR21J1A
+5. (spring security)https://www.youtube.com/watch?v=EeXFwR21J1A
