@@ -3,7 +3,14 @@ package in.dev.shvms.refactoredoctoenigma;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+
+/*
+* exclude = {SecurityAutoConfiguration.class, ManagementWebSecurityAutoConfiguration.class} can be used to disable
+* Spring security autoconfiguration (default security);
+* ManagementWebSecurityAutoConfiguration.class is excluded because /actuator endpoint is enabled;
+*
+* */
+@SpringBootApplication //(exclude = {SecurityAutoConfiguration.class, ManagementWebSecurityAutoConfiguration.class})
 public class RefactoredOctoEnigmaApplication {
 
 	public static void main(String[] args) {
