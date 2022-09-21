@@ -17,6 +17,12 @@ java v17
 2. spring-boot-starter and test
 3. spring-boot-actuator
 4. spring-boot-security and test with filters
-  
-5. (spring security)https://www.youtube.com/watch?v=EeXFwR21J1A
-poll to http://<ip>:8080/github-webhook/
+5. springdoc-openapi-ui [docs_link](https://redocly.com/redoc/)
+
+## More Details 
+
+1. spring security dependency added with some small tweaks [TO_WATCH](https://www.youtube.com/watch?v=EeXFwR21J1A)
+2. To authenticate: `/login` to access actuator (admin, ADMIN, ~~QazXsw@12~~) (user, USER, ~~pass~~) username, role, password respt.
+3. GitHub repo is polling to `http://<ip>:8080/github-webhook/` link on any commit in master branch. 
+5. `springdoc.show-actuator=true` will expose actuator endpoints to api docs 
+6. UI is access-able at: `/swagger-ui/index.html`
